@@ -5,4 +5,5 @@ class Article
   field :published_on, :type => Date
   validates_presence_of :name
   embeds_many :comments
+  belongs_to :author
 end
